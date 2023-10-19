@@ -36,7 +36,6 @@ set nocompatible
 " }}}
 
 " colors {{{
-    let g:gruvbox_italic=1
     set termguicolors
     set bg=dark
     colorscheme gruvbox
@@ -47,6 +46,8 @@ set nocompatible
     augroup templates
         autocmd BufNewFile *[hH][wW]*.tex 0r ~/.vim/templates/hw_skeleton.tex
         autocmd BufNewFile *[hH][wW]*.Rmd 0r ~/.vim/templates/hw_skeleton.Rmd
+        autocmd BufNewFile *cw*.Rmd 0r ~/.vim/templates/cw_skeleton.Rmd
+        autocmd BufNewFile *.c 0r ~/.vim/templates/hw_skeleton.c
     augroup END
 " }}}
 
